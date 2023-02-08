@@ -28,5 +28,17 @@ WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
 
-https://sheltered-island-22588.herokuapp.com/
-https://github.com/BhatJ/note-taker
+## Usage
+* Launch Note taker by opening https://sheltered-island-22588.herokuapp.com/ in a web browser
+* Click on Get Started to open the notes page
+  ![Landing page](./Develop/public/assets/images/landingPage.png)
+* Saved notes will appear in the left hand column
+  ![Notes page](./Develop/public/assets/images/notesPage.png)
+* Add a new note by filling in the note title and text in the right column
+* When the note text is added, the save ICON will appear in the navigation bar
+  ![New note](./Develop/public/assets/images/newNote.png)
+* Press the save icon to save the note
+* View old notes by clicking on a note listed in the left column
+  ![Old note](./Develop/public/assets/images/oldNote.png)
+* Click the new note icopn (+) to add a new note
+* Click on Note Taker in the navigation bar to return to the landing page
