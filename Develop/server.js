@@ -1,4 +1,5 @@
 const express = require('express');
+const uniqid = require('uniqid');
 const path = require('path');
 const fs = require('fs');
 const db = require('./db/db.json');
@@ -34,11 +35,13 @@ app.post('/api/notes', (req, res) => {
   console.info(`${req.method} request received to add a note`);
 
   const {title, text} = req.body;
+  const id = uniqid();
 
   if (title && text) {
     const newNote = {
       title,
       text,
+      id,
     };
 
     db.push(newNote);
